@@ -1,4 +1,5 @@
 require('./main.css');
+require('./assets/highlight/styles/default.css');
 
 var Elm = require('./Main.elm');
 
@@ -12,7 +13,6 @@ app.ports.scrollToElement.subscribe(function(id){
             return;
         }
         var target = document.getElementById(id);
-        console.log(target);
         if(!target){
             return;
         }
